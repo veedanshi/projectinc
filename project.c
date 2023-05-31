@@ -1,4 +1,4 @@
-include<stdio.h>
+#include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -28,7 +28,7 @@ void login();
 
 /*FUNCTION DECLARATION*/
 
-/MAIN()/
+
 
 int main()
 
@@ -116,8 +116,6 @@ start:
 	goto start;
 	return(0);
 }
-
-/VIEWDETAILS()/
 
 
 void viewdetails(char s[10], char d[10])
@@ -218,7 +216,7 @@ void viewdetails(char s[10], char d[10])
 
 }
 
-/RESERVATION()/
+
 
 void reservation(char s[10], char d[10])
 {
@@ -280,8 +278,6 @@ start:
 	fclose(fp);
 	getch();
 }
-
-/CHARGE()/
 
 float charge(int train_num, int num_of_seats, int clas)
 {
@@ -395,7 +391,7 @@ float charge(int train_num, int num_of_seats, int clas)
 }
 
 
-/PRINTTICKET()/
+
 
 void printticket(char name[], int num_of_seats, int train_num, float charges)
 {
